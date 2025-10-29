@@ -1,42 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Center Space with Side Arrows</title>
-    <link rel="stylesheet" href="../style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
     <div class="viewport">
-        <main class="panel" id="main" role="main">
-            <section>
-                <div class="main" id="main">
-                    <p id="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quo?</p>
-                    <div class="colors">
-                        <button id="btn_verde">Verde</button>
-                        <button id="btn_vermelho">Vermelho</button>
-                        <button id="btn_azul">Cruzeiro</button>
-                    </div>
-                </div>
-            </section>
-        </main>
+      <main class="panel" id="main" role="main">
+        <section>
+          <div class="main" id="main">
+            <p id="main_text">Use os botões para alterar a cor do texto</p>
+            <div class="colors">
+              <button id="btn_verde">Verde</button>
+              <button id="btn_vermelho">Vermelho</button>
+              <button id="btn_azul">Cruzeiro</button>
+            </div>
+          </div>
+        </section>
+      </main>
 
-        <!-- Left arrow -->
-        <button class="arrow left" id="leftBtn" aria-label="Navigate to previous page" onclick="window.location.href='../index.html'">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M15 18l-6-6 6-6"></path>
-            </svg>
-        </button>
+      <!-- Left arrow -->
+      <button
+        class="arrow left"
+        id="leftBtn"
+        aria-label="Navigate to previous page"
+        onclick="window.location.href='../index.html'"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15 18l-6-6 6-6"></path>
+        </svg>
+      </button>
 
-        <!-- Right arrow -->
-        <button class="arrow right" id="rightBtn" aria-label="Navigate to next page" onclick="window.location.href='example3.html'">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M9 6l6 6-6 6"></path>
-            </svg>
-        </button>
+      <!-- Right arrow -->
+      <button
+        class="arrow right"
+        id="rightBtn"
+        aria-label="Navigate to next page"
+        onclick="window.location.href='example3.html'"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M9 6l6 6-6 6"></path>
+        </svg>
+      </button>
     </div>
 
     <script src="../src/example2.js"></script>
-</body>
-
+  </body>
 </html>

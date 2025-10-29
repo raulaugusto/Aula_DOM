@@ -1,21 +1,16 @@
-const btn = document.getElementById('add_element');
-const list = document.getElementById('main_list');
-
-let index = 0;
-
-btn.addEventListener('click', createElement);
+const button = document.getElementById("add_element");
+const list = document.getElementById("main_list");
+let counter = 0;
+button.addEventListener("click", createElement);
 
 function createElement() {
-    const newElement = document.createElement('p');
-    newElement.textContent = `Novo elemento ${index} criado!`;
+  const newElement = document.createElement("p");
+  newElement.innerText = `Novo Elemento ${counter}`;
 
-    newElement.style.color = 'purple';
-    newElement.style.fontSize = '20px';
+  newElement.addEventListener("click", () => {
+    list.removeChild(newElement);
+  });
 
-    newElement.addEventListener('click', () => {
-        list.removeChild(newElement);
-    });
-
-    list.appendChild(newElement);
-    index++;
-};
+  list.appendChild(newElement);
+  counter++;
+}

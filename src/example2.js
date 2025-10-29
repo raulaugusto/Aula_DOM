@@ -1,17 +1,25 @@
-const btn_verde = document.getElementById('btn_verde');
-const btn_vermelho = document.getElementById('btn_vermelho');
-const btn_azul = document.getElementById('btn_azul');
-const text = document.getElementById('main_text')
+const greenButton = document.getElementById("btn_verde");
+const redButton = document.getElementById("btn_vermelho");
+const blueButton = document.getElementById("btn_azul");
+const mainText = document.getElementById("main_text");
 
-
-btn_verde.addEventListener('click', () => {
-    text.style.backgroundColor = 'green';
+greenButton.addEventListener("click", () => {
+  removeClasses();
+  mainText.classList.toggle("greenText");
 });
 
-btn_vermelho.addEventListener('click', () => {
-    text.style.backgroundColor = 'red';
+redButton.addEventListener("click", () => {
+  removeClasses();
+  mainText.classList.toggle("redText");
 });
 
-btn_azul.addEventListener('click', () => {
-    text.style.backgroundColor = 'blue';
+blueButton.addEventListener("click", () => {
+  removeClasses();
+  mainText.classList.toggle("blueText");
 });
+
+function removeClasses() {
+  mainText.classList.remove("greenText");
+  mainText.classList.remove("redText");
+  mainText.classList.remove("blueText");
+}
